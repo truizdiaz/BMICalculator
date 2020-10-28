@@ -26,9 +26,10 @@
                         <div class="contenedor">
                             <p>Altura</p>
                             <div class="estiloNumero">
-                                180 <span class="cm">cm</span>
+                                {{ altura }} <span class="cm">cm</span>
                             </div>
-                            <input type="range" class="custom-range">
+                            <input type="range" [value]="altura" min="120" max="220" class="custom-range"
+                                    (input)="cambiarAltura($event)">
                         </div>
                     </div>
                 </div>

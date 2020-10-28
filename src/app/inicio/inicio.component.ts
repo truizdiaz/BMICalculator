@@ -16,4 +16,9 @@ export class InicioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cambiarAltura(event: any): void{
+    console.log(event);
+    this.altura = event.target.value;
+  }
+
 }
