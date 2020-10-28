@@ -6,15 +6,15 @@
                 <div class="col-12">
                     <div class="fondo-item">
                         <div class="contenedor">
-                            <p class="resultado">RESULTADO</p>
-                            <div class="estiloNumero">20.2</div>
-                            <p class="interpretacion">Interpretacion..</p>
+                            <p class="resultado">{{ resultado }}</p>
+                            <div class="estiloNumero">{{ bmi }}</div>
+                            <p class="interpretacion">{{ interpretacion }}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <button class="btn btn-primary btn-lg btn-block btn-color">RE-CALCULAR</button>
+                <button class="btn btn-primary btn-lg btn-block btn-color" routerLink="/">RE-CALCULAR</button>
             </div>
         </div>
     </div>
