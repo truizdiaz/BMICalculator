@@ -21,4 +21,18 @@ export class InicioComponent implements OnInit {
     this.altura = event.target.value;
   }
 
+  masculino(): void {
+    this.sexo = 'Masculino';
+  }
+
+  femenino(): void {
+    this.sexo = 'Femenino';
+  }
+
+  calcular(): void {
+    const BMI = this.peso / Math.pow(this.altura / 100, 2);
+    console.log(BMI.toFixed(1));
+  }
+
+
 }
